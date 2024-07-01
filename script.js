@@ -1,8 +1,8 @@
 
-const deck = ["/Sprites/AC.png", "/Sprites/2C.png", "/Sprites/3C.png", "/Sprites/4C.png", "/Sprites/5C.png", "/Sprites/6C.png", "/Sprites/7C.png", "/Sprites/8C.png", "/Sprites/9C.png", "/Sprites/10C.png", "/Sprites/JC.png", "/Sprites/QC.png", "/Sprites/KC.png",
-              "/Sprites/AD.png", "/Sprites/2D.png", "/Sprites/3D.png", "/Sprites/4D.png", "/Sprites/5D.png", "/Sprites/6D.png", "/Sprites/7D.png", "/Sprites/8D.png", "/Sprites/9D.png", "/Sprites/10D.png", "/Sprites/JD.png", "/Sprites/QD.png", "/Sprites/KD.png",
-              "/Sprites/AH.png", "/Sprites/2H.png", "/Sprites/3H.png", "/Sprites/4H.png", "/Sprites/5H.png", "/Sprites/6H.png", "/Sprites/7H.png", "/Sprites/8H.png", "/Sprites/9H.png", "/Sprites/10H.png", "/Sprites/JH.png", "/Sprites/QH.png", "/Sprites/KH.png",
-              "/Sprites/AS.png", "/Sprites/2S.png", "/Sprites/3S.png", "/Sprites/4S.png", "/Sprites/5S.png", "/Sprites/6S.png", "/Sprites/7S.png", "/Sprites/8S.png", "/Sprites/9S.png", "/Sprites/10S.png", "/Sprites/JS.png", "/Sprites/QS.png", "/Sprites/KS.png"];
+const deck = ["./Sprites/AC.png", "./Sprites/2C.png", "./Sprites/3C.png", "./Sprites/4C.png", "./Sprites/5C.png", "./Sprites/6C.png", "./Sprites/7C.png", "./Sprites/8C.png", "./Sprites/9C.png", "./Sprites/10C.png", "./Sprites/JC.png", "./Sprites/QC.png", "./Sprites/KC.png",
+            "./Sprites/AD.png", "./Sprites/2D.png", "./Sprites/3D.png", "./Sprites/4D.png", "./Sprites/5D.png", "./Sprites/6D.png", "./Sprites/7D.png", "./Sprites/8D.png", "./Sprites/9D.png", "./Sprites/10D.png", "./Sprites/JD.png", "./Sprites/QD.png", "./Sprites/KD.png",
+            "./Sprites/AH.png", "./Sprites/2H.png", "./Sprites/3H.png", "./Sprites/4H.png", "./Sprites/5H.png", "./Sprites/6H.png", "./Sprites/7H.png", "./Sprites/8H.png", "./Sprites/9H.png", "./Sprites/10H.png", "./Sprites/JH.png", "./Sprites/QH.png", "./Sprites/KH.png",
+            "./Sprites/AS.png", "./Sprites/2S.png", "./Sprites/3S.png", "./Sprites/4S.png", "./Sprites/5S.png", "./Sprites/6S.png", "./Sprites/7S.png", "./Sprites/8S.png", "./Sprites/9S.png", "./Sprites/10S.png", "./Sprites/JS.png", "./Sprites/QS.png", "./Sprites/KS.png"];
 let hidden;
 const dealerDeck = [];
 const playerDeck = [];
@@ -12,10 +12,10 @@ let a1ValueSelected = false;
 let a11ValueSelected = false;
 
 //Use parallel arrays to check the value of a card. (2C = 2);
-const card = ["/Sprites/2C.png", "/Sprites/3C.png", "/Sprites/4C.png", "/Sprites/5C.png", "/Sprites/6C.png", "/Sprites/7C.png", "/Sprites/8C.png", "/Sprites/9C.png", "/Sprites/10C.png", "/Sprites/JC.png", "/Sprites/QC.png", "/Sprites/KC.png",
-              "/Sprites/2D.png", "/Sprites/3D.png", "/Sprites/4D.png", "/Sprites/5D.png", "/Sprites/6D.png", "/Sprites/7D.png", "/Sprites/8D.png", "/Sprites/9D.png", "/Sprites/10D.png", "/Sprites/JD.png", "/Sprites/QD.png", "/Sprites/KD.png",
-              "/Sprites/2H.png", "/Sprites/3H.png", "/Sprites/4H.png", "/Sprites/5H.png", "/Sprites/6H.png", "/Sprites/7H.png", "/Sprites/8H.png", "/Sprites/9H.png", "/Sprites/10H.png", "/Sprites/JH.png", "/Sprites/QH.png", "/Sprites/KH.png",
-              "/Sprites/2S.png", "/Sprites/3S.png", "/Sprites/4S.png", "/Sprites/5S.png", "/Sprites/6S.png", "/Sprites/7S.png", "/Sprites/8S.png", "/Sprites/9S.png", "/Sprites/10S.png", "/Sprites/JS.png", "/Sprites/QS.png", "/Sprites/KS.png"];
+const card = ["./Sprites/2C.png", "./Sprites/3C.png", "./Sprites/4C.png", "./Sprites/5C.png", "./Sprites/6C.png", "./Sprites/7C.png", "./Sprites/8C.png", "./Sprites/9C.png", "./Sprites/10C.png", "./Sprites/JC.png", "./Sprites/QC.png", "./Sprites/KC.png",
+            "./Sprites/2D.png", "./Sprites/3D.png", "./Sprites/4D.png", "./Sprites/5D.png", "./Sprites/6D.png", "./Sprites/7D.png", "./Sprites/8D.png", "./Sprites/9D.png", "./Sprites/10D.png", "./Sprites/JD.png", "./Sprites/QD.png", "./Sprites/KD.png",
+            "./Sprites/2H.png", "./Sprites/3H.png", "./Sprites/4H.png", "./Sprites/5H.png", "./Sprites/6H.png", "./Sprites/7H.png", "./Sprites/8H.png", "./Sprites/9H.png", "./Sprites/10H.png", "./Sprites/JH.png", "./Sprites/QH.png", "./Sprites/KH.png",
+            "./Sprites/2S.png", "./Sprites/3S.png", "./Sprites/4S.png", "./Sprites/5S.png", "./Sprites/6S.png", "./Sprites/7S.png", "./Sprites/8S.png", "./Sprites/9S.png", "./Sprites/10S.png", "./Sprites/JS.png", "./Sprites/QS.png", "./Sprites/KS.png"];
 
 const value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10,
                2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10,
@@ -23,7 +23,7 @@ const value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10,
                2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 ShuffleDeck();
-createCardDealer("/Sprites/Card Back 2.png");
+createCardDealer("./Sprites/Card Back 2.png");
 drawHiddenCard();
 drawCardDealer();
 
@@ -279,7 +279,7 @@ function currentScore(user, deck){
                 user += value[j];
                 break;
             }else if(deck[i] === "/Sprites/AC.png" || deck[i] === "/Sprites/AD.png" || deck[i] === "/Sprites/AH.png" || deck[i] === "/Sprites/AS.png"){
-                if(user >= 8){
+                if(user > 10){
                     user += 1;
                     break;
                 }else{
