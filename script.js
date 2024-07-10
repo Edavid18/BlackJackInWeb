@@ -270,6 +270,9 @@ function drawCardPlayer(){
     }else{
         window.alert("You must select a value for the A");
     }
+    scorePlayer = 0;
+    scorePlayer = currentScore(scorePlayer, playerDeck);
+    console.log(scorePlayer);
 }
 
 function currentScore(user, deck){
@@ -278,9 +281,10 @@ function currentScore(user, deck){
             if(deck[i] === card[j]){
                 user += value[j];
                 break;
-            }else if(deck[i] === "/Sprites/AC.png" || deck[i] === "/Sprites/AD.png" || deck[i] === "/Sprites/AH.png" || deck[i] === "/Sprites/AS.png"){
+            }else if(deck[i] === "./Sprites/AC.png" || deck[i] === "./Sprites/AD.png" || deck[i] === "./Sprites/AH.png" || deck[i] === "./Sprites/AS.png"){
                 if(user > 10){
                     user += 1;
+                    console.log("The user in user > 10 is: " + user);
                     break;
                 }else{
                     if(a1ValueSelected === false && a11ValueSelected === false){
@@ -311,10 +315,10 @@ function currentScoreDealer(user, deck){
                 user += value[j];
                 break;
             }else if(deck[i] === "/Sprites/AC.png" || deck[i] === "/Sprites/AD.png" || deck[i] === "/Sprites/AH.png" || deck[i] === "/Sprites/AS.png"){
-                if(user >= 8){
+                if(user > 10){
                     user += 1;
                     break;
-                }else{
+                }else if(user <= 10){
                     user += 11;
                     break;
                 }
