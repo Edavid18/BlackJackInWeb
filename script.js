@@ -254,7 +254,7 @@ async function drawCardDealer(){
 }
 
 function drawCardPlayer(){
-    
+
     let buttonForA = document.getElementById('button1');
 
     if(!buttonForA){
@@ -273,6 +273,7 @@ function drawCardPlayer(){
     scorePlayer = 0;
     scorePlayer = currentScore(scorePlayer, playerDeck);
     console.log(scorePlayer);
+    
 }
 
 function currentScore(user, deck){
@@ -314,7 +315,7 @@ function currentScoreDealer(user, deck){
             if(deck[i] === card[j]){
                 user += value[j];
                 break;
-            }else if(deck[i] === "/Sprites/AC.png" || deck[i] === "/Sprites/AD.png" || deck[i] === "/Sprites/AH.png" || deck[i] === "/Sprites/AS.png"){
+            }else if(deck[i] === "./Sprites/AC.png" || deck[i] === "./Sprites/AD.png" || deck[i] === "./Sprites/AH.png" || deck[i] === "./Sprites/AS.png"){
                 if(user > 10){
                     user += 1;
                     break;
