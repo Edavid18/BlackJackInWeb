@@ -45,3 +45,37 @@ body{
     font-family: monospace;
     font-size: 50px;
 }
+
+@media (max-width: 600px) {
+
+    .Card{
+        width: 140px;
+        height: 190px;
+    }
+
+    #Dealer{
+        margin-left: 0px;
+        height: 300px;
+    }
+    
+    #Player{
+        margin-left: 0px;
+        height: 300px;
+    }
+
+    #Buttons{
+        margin-left: 0px;
+        height: 100px;
+        display: flex;
+    }
+
+    .button{
+        border-radius: 15%;
+        width: 80px;
+        height: 30px;
+        border: 2px dotted black;
+        margin: 20px;
+        font-family: monospace;
+        font-size: large;
+    }
+}
